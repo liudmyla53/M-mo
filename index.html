@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Mémoire</title>
+     <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>🎴 Jeu de Mémoire 🎴</h1>
+    <!-- Affichage du chronomètre -->
+  <div id="timer">Temps : 0s</div>
+  <!-- Affichage du compteur de coups -->
+  <div id="moves">Coups : 0</div>
+<!-- Bouton pour recommencer une partie -->
+  <button id="reset">🔄 Rejouer</button>
+  <!-- Choix du thème -->
+  <label for="theme">Choisis un thème :</label>
+<select id="theme">
+  <option value="animaux">Animaux</option>
+  <option value="fruits">Fruits</option>
+  <option value="emotions">Émotions</option>
+  <option value="vehicules">Véhicules</option>
+  <option value="chiffres">Chiffres</option>
+</select>
+ <!-- Message de victoire -->
+  <div id="victory-message"></div>
+ <!-- Plateau de jeu où seront ajoutées les cartes -->
+  <div id="game-board" class="board"></div>
+<p>Créateur du jeu : Liudmyla 2025</p>
+
+
+</body>
+</html>

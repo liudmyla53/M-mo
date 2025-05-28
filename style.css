@@ -1,0 +1,61 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  background-color: #fcefee;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#timer, #moves {
+  font-size: 18px;
+  margin: 10px;
+}
+
+#victory-message {
+  font-size: 24px;
+  color: green;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#reset, #theme {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #f8a5c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  user-select: none;
+  transition: transform 0.3s;
+}
+
+.card.revealed {
+  background-color: #fff;
+  cursor: default;
+}
+
+.card.matched {
+  background-color: #a3e4d7;
+}
